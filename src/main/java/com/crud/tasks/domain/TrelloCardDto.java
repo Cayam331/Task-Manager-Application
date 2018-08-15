@@ -1,6 +1,5 @@
 package com.crud.tasks.domain;
 
-import com.sun.jndi.toolkit.url.Uri;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
