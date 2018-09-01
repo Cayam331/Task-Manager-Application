@@ -47,8 +47,8 @@ public class TrelloMapperTestSuite{
         //When
         List<TrelloBoardDto> resultTrelloBoardDto = trelloMapper.mapToBoardsDto(testTrelloBoard);
         //Then
-        Assert.assertEquals("5", resultTrelloBoardDto.get(0).getId());
-        Assert.assertEquals("test1", resultTrelloBoardDto.get(0).getName());
+        Assert.assertEquals("test1", resultTrelloBoardDto.get(0).getId());
+        Assert.assertEquals("5", resultTrelloBoardDto.get(0).getName());
         Assert.assertEquals("5", resultTrelloBoardDto.get(0).getLists().get(0).getId());
         Assert.assertEquals("test22", resultTrelloBoardDto.get(0).getLists().get(0).getName());
         Assert.assertEquals(true, resultTrelloBoardDto.get(0).getLists().get(0).isClosed());

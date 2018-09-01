@@ -14,7 +14,7 @@ public class TrelloMapper {
     }
 
     public List<TrelloBoardDto> mapToBoardsDto(final List<TrelloBoard> trelloBoards){
-        return trelloBoards.stream().map(trelloBoard -> new TrelloBoardDto(trelloBoard.getId(), trelloBoard.getName(), mapToListDto(trelloBoard.getLists()))).collect(Collectors.toList());
+        return trelloBoards.stream().map(trelloBoard -> new TrelloBoardDto(trelloBoard.getName(), trelloBoard.getId(), mapToListDto(trelloBoard.getLists()))).collect(Collectors.toList());
     }
 
     public List<TrelloList> mapToList(final List<TrelloListDto> trelloListDto) {
