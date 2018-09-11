@@ -53,4 +53,5 @@ public class TaskMapperTestSuite {
         Assert.assertEquals("test2", resultList.get(0).getContent());
         Assert.assertEquals("test1", resultList.get(0).getTitle());
     }
+
 }
